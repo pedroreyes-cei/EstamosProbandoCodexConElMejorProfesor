@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palmera en riesgo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="escena">
+      <h1>¡La palmera está por caer!</h1>
+      <p>Presiona el botón para estabilizarla y evitar su caída.</p>
+
+      <div class="suelo"></div>
+      <div class="palmera" id="palmera" aria-label="Palmera inclinándose">
+        <div class="tronco"></div>
+        <div class="hoja hoja-1"></div>
+        <div class="hoja hoja-2"></div>
+        <div class="hoja hoja-3"></div>
+        <div class="hoja hoja-4"></div>
+      </div>
+
+      <button id="salvarBtn" type="button">Evitar caída</button>
+      <p id="estado" class="estado" aria-live="polite"></p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+:root {
+  color-scheme: light;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(#87ceeb 0 70%, #f5deb3 70%);
+}
+
+.escena {
+  width: min(92vw, 680px);
+  text-align: center;
+  position: relative;
+  padding: 1.5rem;
+}
+
+.suelo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 68px;
+  height: 8px;
+  background: #8b5a2b;
+  border-radius: 999px;
+}
+
+.palmera {
+  width: 200px;
+  height: 300px;
+  margin: 0 auto 1.5rem;
+  position: relative;
+  transform-origin: 50% 95%;
+  transition: transform 200ms ease-out;
+}
+
+.tronco {
+  position: absolute;
+  left: 50%;
+  bottom: 18px;
+  width: 26px;
+  height: 190px;
+  transform: translateX(-50%);
+  background: repeating-linear-gradient(
+    180deg,
+    #8b5a2b,
+    #8b5a2b 12px,
+    #a86c3a 12px,
+    #a86c3a 24px
+  );
+  border-radius: 16px;
+}
+
+.hoja {
+  position: absolute;
+  left: 50%;
+  top: 62px;
+  width: 120px;
+  height: 28px;
+  transform-origin: 0% 50%;
+  border-radius: 999px;
+  background: #2e8b57;
+}
+
+.hoja-1 {
+  transform: translateX(-8px) rotate(-45deg);
+}
+
+.hoja-2 {
+  transform: translateX(-8px) rotate(-15deg);
+}
+
+.hoja-3 {
+  transform: translateX(-8px) rotate(15deg);
+}
+
+.hoja-4 {
+  transform: translateX(-8px) rotate(45deg);
+}
+
+button {
+  border: none;
+  border-radius: 999px;
+  padding: 0.8rem 1.4rem;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: #fff;
+  background: #1b5e20;
+}
+
+button:hover {
+  background: #2e7d32;
+}
+
+.estado {
+  min-height: 1.5rem;
+  font-weight: 700;
+  color: #1b4332;
+}
